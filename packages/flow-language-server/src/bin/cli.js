@@ -72,8 +72,8 @@ const method = methods.find(m => argv[m] != null);
 
 options.method = method;
 if (options.method === 'socket') {
-  cliInvariant(options.port, '--socket option requires port.');
   options.port = argv.socket;
+  cliInvariant(options.port, '--socket option requires port.');
 } else if (options.method === 'pipe') {
   cliInvariant(options.pipe, '--pipe option requires a pipe name.');
   options.pipeName = argv.pipe;
