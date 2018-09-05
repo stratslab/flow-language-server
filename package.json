@@ -1,5 +1,6 @@
 {
   "name": "flow-language-server",
+  "version": "0.6.0",
   "private": true,
   "workspaces": ["packages/*"],
   "scripts": {
